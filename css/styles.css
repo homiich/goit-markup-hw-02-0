@@ -199,7 +199,7 @@ li {
 }
 .employeers-profession {
   color: var(--brand-text-color)
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
