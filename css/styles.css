@@ -4,18 +4,22 @@
   --brand-text-color: #757575;
   --brand-background-color: #2f303a;
 }
-/* general markup */
+/* Общие правила */
 body {
-  /* font-family: 'Raleway', sans-serif; */
   font-family: 'Roboto', sans-serif;
   background: #ffffff;
 }
 link {
   text-decoration: none;
+  color: inherit;
 }
 li {
-  text-decoration: none;
+  list-style: none;
   margin-left: 0px;
+  padding: 0;
+}
+/* Шапка сайта */
+.nav-section {
 }
 .logo-style {
   color: var(--brand-color);
@@ -32,6 +36,14 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav-item {
+  margin: 50px;
 }
 .nav-pages {
   color: var(--brand-second-color);
@@ -50,6 +62,9 @@ li {
 }
 .link-nav:hover {
   color: var(--brand-color);
+}
+.header-link {
+  display: inline;
 }
 
 .main {
@@ -90,8 +105,18 @@ li {
 /* Особенности*/
 .features-section {
 }
-.characteristic-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  /* display: none; */
 }
 .features-title {
   color: var(--brand-second-color);
@@ -112,6 +137,7 @@ li {
 .section-our-work {
 }
 .our-work-title {
+  text-align: center;
 }
 /* Наша команда  */
 .our-team-section {
@@ -140,7 +166,7 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* Footer */
+/* Подвал */
 .main-footer {
   background-color: var(--brand-background-color);
 }
@@ -153,10 +179,60 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.link-address > .link {
-  font-style: normal;
+.link-address {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-decoration: none;
+}
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.link-footer:hover {
+  color: var(--brand-color);
+}
+/* Портфолио страница */
+.filter-section {
+}
+.filter-list {
+}
+.btn-filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brand-second-color);
+  background-color: #f5f4fa;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-style: none;
+}
+.btn-filters:hover {
+  color: #ffffff;
+  background-color: var(--brand-color);
+}
+.category-of-products {
+}
+.category-cards {
+}
+.category-title {
+  color: var(--brand-second-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.category-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--brand-text-color);
 }
