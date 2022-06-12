@@ -21,6 +21,9 @@ li {
 /* Шапка сайта */
 .nav-section {
 }
+.nav-logo {
+  text-decoration: none;
+}
 .logo-style {
   color: var(--brand-color);
   font-family: 'Raleway';
@@ -28,6 +31,7 @@ li {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .logo-style-nav {
   font-family: 'Raleway';
@@ -36,6 +40,7 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+  text-decoration: none;
 }
 .nav-list {
   display: flex;
@@ -51,6 +56,11 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.active,
+.nav-pages:hover {
+  color: var(--brand-color);
 }
 .nav-pages:hover {
   color: var(--brand-color);
@@ -59,6 +69,10 @@ li {
 .link-nav {
   color: var(--brand-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 .link-nav:hover {
   color: var(--brand-color);
@@ -93,8 +107,16 @@ li {
 .order-btn {
   color: #ffffff;
   background-color: var(--brand-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
   box-shadow: rgba(0, 0, 0, 0.15);
-  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
   margin: 0px 700px 200px 700px;
   border-radius: 4px;
   cursor: pointer;
@@ -137,12 +159,25 @@ li {
 .section-our-work {
 }
 .our-work-title {
+  color: var(--brand-second-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 /* Наша команда  */
 .our-team-section {
+  background: #f5f4fa;
+  
+}
+.our-team-list{
+
+ 
 }
 .our-team-title {
+  color: var(--brand-second-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -150,7 +185,10 @@ li {
   letter-spacing: 0.03em;
 }
 .our-team-foto {
+   background: #FFFFFF;
   text-align: center;
+  width: 270px;
+  height: 368px;
 }
 .our-team-employees {
   font-weight: 500;
@@ -160,6 +198,7 @@ li {
   letter-spacing: 0.03em;
 }
 .employeers-profession {
+  color: var(--brand-text-color)
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -178,20 +217,24 @@ li {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .link-address {
+  color: #ffffff;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
   text-decoration: none;
 }
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .link-footer:hover {
   color: var(--brand-color);
@@ -202,6 +245,7 @@ li {
 .filter-list {
 }
 .btn-filters {
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -218,21 +262,27 @@ li {
   color: #ffffff;
   background-color: var(--brand-color);
 }
-.category-of-products {
+.category-products {
+  background: #FFFFFF;
+  
 }
 .category-cards {
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
 }
 .category-title {
   color: var(--brand-second-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .category-item {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
 }
